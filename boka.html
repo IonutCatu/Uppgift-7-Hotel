@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Bright Hotel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bright Hotel - Reserve</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="bilder/hotel_logo.png" alt="">
+    <img id="pool" src="bilder/pool.jpeg" alt="">
+  </header>
+  <nav class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="hitta.html">Find</a>
+    <a href="boka.html" class="active">Reserve</a>
+    <a href="kontakta.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </nav>
+  <section>
+    <div class="container">
+      <h1>Reserve</h1>
+      <form action="tack.html">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..,">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="telephone-email">Telephone Nubmer / Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="telephone-email" name="telephone-email" placeholder="Your telephone number or your email...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label>Room Type</label>
+          </div>
+          <div class="col-75">
+            <select id="roomtype" name="roomtype">
+              <option value="simpleroom">Simple Room</option>
+              <option value="doubleroom">Double Room</option>
+              <option value="familyroom">Family Room</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Other</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Othe information..." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>Bright Hotel | Lilla Varvsgatan 14 | 211 15 | Malmö | 012 - 12 34 56</p>
+  </footer>
+  <script src="script-nav.js"></script>
+</body>
+
+</html>

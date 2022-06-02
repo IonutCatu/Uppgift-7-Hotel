@@ -1,0 +1,45 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "header header""nav nav""section section ""aside aside""footer footer ";
+  grid-gap: 0.5em 1em;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header  header""nav  nav""section""footer  footer";
+    grid-gap: 1em 2em;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+}
+
+article {
+  grid-area: article;
+  background-color: #e3d9aa;
+  outline: solid;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  background-color: #857228;
+  color: white;
+}
